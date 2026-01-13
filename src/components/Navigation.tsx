@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Brain } from "lucide-react";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -51,6 +51,15 @@ const Navigation = () => {
                 {item}
               </button>
             ))}
+            <a
+              href="https://github.com/sugeerth/BrainModulyzer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Brain size={14} />
+              BrainModulyzer
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,6 +87,15 @@ const Navigation = () => {
                 {item}
               </button>
             ))}
+            <a
+              href="https://github.com/sugeerth/BrainModulyzer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors px-2 py-1"
+            >
+              <Brain size={14} />
+              BrainModulyzer
+            </a>
           </div>
         </div>
       )}
