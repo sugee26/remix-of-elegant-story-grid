@@ -35,10 +35,10 @@ const Work = () => {
     },
     {
       title: "Brain Modulyzer",
-      subtitle: "Best Paper Award",
-      tags: ["Neuroscience"],
+      subtitle: "Best Paper Award • Live Demo",
+      tags: ["Neuroscience", "Web App"],
       size: "small",
-      link: "https://github.com/sugeerth/BrainModulyzer",
+      link: "https://brainmodulyzer.onrender.com",
       gradient: "from-green-500/20 to-teal-500/20",
     },
     {

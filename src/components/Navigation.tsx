@@ -22,7 +22,7 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
-  const navItems = ["work", "stack", "contact"];
+  const navItems = ["work", "research", "stack", "contact"];
 
   return (
     <nav
