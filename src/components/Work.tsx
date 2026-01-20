@@ -38,7 +38,7 @@ const Work = () => {
       subtitle: "Best Paper Award • Live Demo",
       tags: ["Neuroscience", "Web App"],
       size: "small",
-      link: "https://brainmodulyzer.onrender.com",
+      link: "http://localhost:8050",
       gradient: "from-green-500/20 to-teal-500/20",
     },
     {

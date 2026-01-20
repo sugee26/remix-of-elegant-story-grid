@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight, BookOpen, Award, ExternalLink } from "lucide-react";
+import { ArrowUpRight, BookOpen, Award, ExternalLink, Github } from "lucide-react";
 
 const Research = () => {
   const publications = [
@@ -8,11 +8,11 @@ const Research = () => {
       title: "Brain Modulyzer / NeuroCopilot",
       description: "Interactive visual exploration tool for functional brain connectivity analysis with 3D visualization and AI-powered insights",
       venue: "IEEE VIS 2015 • Best Paper Award • IEEE TCBB 2016",
-      tags: ["Neuroscience", "Visual Analytics", "fMRI", "Graph Neural Networks"],
+      tags: ["Neuroscience", "Visual Analytics", "fMRI"],
       links: {
         paper: "https://sugeerth.github.io/sugeerthML/Papers/brainmodulyzer.pdf",
         github: "https://github.com/sugee26/brainmodulyzer-web",
-        web: "https://brainmodulyzer.onrender.com",
+        web: "http://localhost:8050",
       },
       gradient: "from-green-500/20 to-teal-500/20",
       featured: true,
@@ -101,7 +101,7 @@ const Research = () => {
                           className="w-8 h-8 rounded-full bg-secondary/50 flex items-center justify-center hover:bg-accent/30 transition-colors"
                           title="GitHub"
                         >
-                          <ArrowUpRight size={14} />
+                          <Github size={14} />
                         </a>
                       )}
                     </div>
