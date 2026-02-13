@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight, BookOpen, Award, ExternalLink, Github } from "lucide-react";
+import { ArrowUpRight, BookOpen, Award, Github } from "lucide-react";
 
 const Research = () => {
   const publications = [
@@ -10,9 +10,8 @@ const Research = () => {
       venue: "IEEE VIS 2015 • Best Paper Award • IEEE TCBB 2016",
       tags: ["Neuroscience", "Visual Analytics", "fMRI"],
       links: {
-        paper: "https://sugeerth.github.io/sugeerthML/Papers/brainmodulyzer.pdf",
-        github: "https://github.com/sugee26/brainmodulyzer-web",
-        web: "http://localhost:8050",
+        paper: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5585064/",
+        github: "https://github.com/sugeerth/BrainModulyzer",
       },
       gradient: "from-green-500/20 to-teal-500/20",
       featured: true,
@@ -23,7 +22,7 @@ const Research = () => {
       venue: "IEEE Computer Graphics & Applications",
       tags: ["Deep Learning", "Model Evaluation", "Visual Analytics"],
       links: {
-        paper: "https://sugeerth.github.io/sugeerthML/Papers/deepcompare.pdf",
+        paper: "https://dl.acm.org/doi/10.1109/MCG.2019.2919033",
       },
       gradient: "from-purple-500/20 to-pink-500/20",
       featured: true,
@@ -34,7 +33,7 @@ const Research = () => {
       venue: "EuroVis 2017",
       tags: ["Classification", "Visual Analytics"],
       links: {
-        paper: "https://sugeerth.github.io/sugeerthML/Papers/ccvis.pdf",
+        paper: "https://scholar.google.com/citations?user=Ki9alDwAAAAJ&hl=en",
       },
       gradient: "from-blue-500/20 to-cyan-500/20",
     },
@@ -44,7 +43,7 @@ const Research = () => {
       venue: "IEEE VAST 2014",
       tags: ["Temporal Data", "Parallel Coordinates"],
       links: {
-        paper: "https://sugeerth.github.io/sugeerthML/Papers/paraglyder.pdf",
+        paper: "https://scholar.google.com/citations?user=Ki9alDwAAAAJ&hl=en",
       },
       gradient: "from-orange-500/20 to-yellow-500/20",
     },
@@ -82,17 +81,6 @@ const Research = () => {
                       )}
                     </div>
                     <div className="flex gap-2">
-                      {pub.links.web && (
-                        <a
-                          href={pub.links.web}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="w-8 h-8 rounded-full bg-secondary/50 flex items-center justify-center hover:bg-accent/30 transition-colors"
-                          title="Live Demo"
-                        >
-                          <ExternalLink size={14} />
-                        </a>
-                      )}
                       {pub.links.github && (
                         <a
                           href={pub.links.github}

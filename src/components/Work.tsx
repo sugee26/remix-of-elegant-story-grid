@@ -23,7 +23,7 @@ const Work = () => {
       subtitle: "IEEE CG&A Publication",
       tags: ["Model Evaluation", "Visual Analytics"],
       size: "medium",
-      link: "https://sugeerth.github.io/sugeerthML/Papers/deepcompare.pdf",
+      link: "https://dl.acm.org/doi/10.1109/MCG.2019.2919033",
       gradient: "from-purple-500/20 to-pink-500/20",
     },
     {
@@ -35,10 +35,10 @@ const Work = () => {
     },
     {
       title: "Brain Modulyzer",
-      subtitle: "Best Paper Award • Live Demo",
+      subtitle: "Best Paper Award • GitHub",
       tags: ["Neuroscience", "Web App"],
       size: "small",
-      link: "http://localhost:8050",
+      link: "https://github.com/sugeerth/BrainModulyzer",
       gradient: "from-green-500/20 to-teal-500/20",
     },
     {

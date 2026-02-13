@@ -51,7 +51,7 @@ const Contact = () => {
           <div className="flex items-center justify-center gap-4">
             {[
               { icon: Github, href: "https://github.com/sugeerth", label: "GitHub" },
-              { icon: Linkedin, href: "https://linkedin.com/in/sugeerth", label: "LinkedIn" },
+              { icon: Linkedin, href: "https://www.linkedin.com/in/sugeerth", label: "LinkedIn" },
             ].map(({ icon: Icon, href, label }) => (
               <a
                 key={label}
