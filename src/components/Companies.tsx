@@ -2,11 +2,11 @@ const Companies = () => {
   const companies = [
     { name: "Intuit", logo: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Intuit_Logo.svg" },
     { name: "Intel", logo: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Intel_logo_%282006-2020%29.svg" },
-    { name: "Walgreens", logo: "https://upload.wikimedia.org/wikipedia/commons/6/64/Walgreens_Logo.svg" },
-    { name: "Adobe", logo: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_Logo.svg" },
-    { name: "Samba TV", logo: "https://www.samba.tv/wp-content/uploads/2023/04/logo-light.svg" },
+    { name: "Walgreens", logo: "https://upload.wikimedia.org/wikipedia/commons/3/31/Walgreens_2020_primary_logo.svg" },
+    { name: "Adobe", logo: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg" },
+    { name: "Samba TV", logo: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Samba_TV_Wordmark_Red.svg" },
     { name: "UC Berkeley", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg" },
-    { name: "Berkeley Lab", logo: "https://upload.wikimedia.org/wikipedia/commons/0/07/US-DeptOfEnergy-Seal.svg" },
+    { name: "Berkeley Lab", logo: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Seal_of_the_United_States_Department_of_Energy.svg" },
   ];
 
   return (
@@ -28,9 +28,8 @@ const Companies = () => {
                 <img
                   src={company.logo}
                   alt={company.name}
-                  className="h-full w-full object-contain filter grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                  className="h-full w-full object-contain filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
                   onError={(e) => {
-                    // Fallback to text if logo fails to load
                     const target = e.target as HTMLImageElement;
                     target.style.display = 'none';
                     target.nextElementSibling?.classList.remove('hidden');

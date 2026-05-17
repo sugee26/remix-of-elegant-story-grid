@@ -15,7 +15,7 @@ const Footer = () => {
             BrainModulyzer - Interactive Visual Analysis of Brain Connectivity
           </a>
           <p className="text-center text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Sugeerth Murugesan
+            &copy; {new Date().getFullYear()} Sugeerth Murugesan
           </p>
         </div>
       </div>

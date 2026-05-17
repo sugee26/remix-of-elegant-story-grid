@@ -1,17 +1,29 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import profilePhoto from "@/assets/sugeerth-profile.jpg";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Floating gradient orbs */}
+      {/* Soft gradient background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gradient-radial from-purple-500/20 via-transparent to-transparent rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-gradient-radial from-blue-500/15 via-transparent to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-accent/10 via-transparent to-transparent rounded-full blur-3xl" />
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-gradient-radial from-purple-300/20 via-transparent to-transparent rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-gradient-radial from-blue-300/15 via-transparent to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-accent/5 via-transparent to-transparent rounded-full blur-3xl" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Photo */}
+          <div className="flex justify-center">
+            <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden ring-4 ring-border/50 shadow-lg">
+              <img
+                src={profilePhoto}
+                alt="Sugeerth Murugesan"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
           {/* Label */}
           <p className="text-muted-foreground text-sm tracking-widest uppercase">
             Staff ML Engineer
@@ -24,12 +36,13 @@ const Hero = () => {
 
           {/* One liner */}
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Building AI systems at scale. PhD UC Davis. 150+ citations.
+            Building AI systems at scale. PhD UC Davis. 150+ citations. ICML & NeurIPS Reviewer.
           </p>
 
-          {/* Social icons */}
+          {/* Action icons */}
           <div className="flex items-center justify-center gap-4 pt-4">
             {[
+              { icon: FileText, href: import.meta.env.BASE_URL + "resume.pdf", label: "Resume" },
               { icon: Github, href: "https://github.com/sugeerth", label: "GitHub" },
               { icon: Linkedin, href: "https://linkedin.com/in/sugeerth", label: "LinkedIn" },
               { icon: Mail, href: "mailto:sugeerthmuru@gmail.com", label: "Email" },
@@ -39,7 +52,7 @@ const Hero = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-secondary/50 flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-accent/20 transition-all duration-300"
+                className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-muted-foreground hover:text-foreground hover:bg-accent/10 transition-all duration-300"
                 aria-label={label}
               >
                 <Icon size={18} />
